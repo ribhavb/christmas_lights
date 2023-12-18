@@ -5,7 +5,7 @@ import neopixel
 
 #Initialise a strips variable, provide the GPIO Data Pin
 #utilised and the amount of LED Nodes on strip and brightness (0 to 1 value)
-pixels1 = neopixel.NeoPixel(board.D18, 55, brightness=1)
+pixels1 = neopixel.NeoPixel(board.D18, 25, brightness=1)
 
 #Also create an arbitary count variable
 x=0
@@ -29,7 +29,7 @@ time.sleep(4)
 #which LED Node we will taget/index with a different colour
 
 #Below will loop until variabe x has value 35
-while x<35:
+while x<20:
     
     pixels1[x] = (255, 0, 0)
     pixels1[x-5] = (255, 0, 100)
@@ -40,7 +40,7 @@ while x<35:
     time.sleep(0.05)
 
 #below section is the same process as above loop just in reverse
-while x>-15:
+while x>-5:
     pixels1[x] = (255, 0, 0)
     pixels1[x+5] = (255, 0, 100)
     pixels1[x+10] = (0, 255, 0)
