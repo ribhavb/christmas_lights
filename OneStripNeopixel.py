@@ -28,27 +28,27 @@ time.sleep(4)
 #This was created using a While Loop taking advantage of that arbitary variable to determine
 #which LED Node we will taget/index with a different colour
 
-#Below will loop until variabe x has value 35
-while x<20:
+# #Below will loop until variabe x has value 35
+# while x<20:
     
-    pixels1[x] = (255, 0, 0)
-    pixels1[x-5] = (255, 0, 100)
-    pixels1[x-10] = (0, 0, 255)
-    #Add 1 to the counter
-    x=x+1
-    #Add a small time pause which will translate to 'smoothly' changing colour
-    time.sleep(0.05)
+#     pixels1[x] = (255, 0, 0)
+#     pixels1[x-5] = (255, 0, 100)
+#     pixels1[x-10] = (0, 0, 255)
+#     #Add 1 to the counter
+#     x=x+1
+#     #Add a small time pause which will translate to 'smoothly' changing colour
+#     time.sleep(0.05)
 
-#below section is the same process as above loop just in reverse
-while x>-5:
-    pixels1[x] = (255, 0, 0)
-    pixels1[x+5] = (255, 0, 100)
-    pixels1[x+10] = (0, 255, 0)
-    x=x-1
-    time.sleep(0.05)
+# #below section is the same process as above loop just in reverse
+# while x>-5:
+#     pixels1[x] = (255, 0, 0)
+#     pixels1[x+5] = (255, 0, 100)
+#     pixels1[x+10] = (0, 255, 0)
+#     x=x-1
+#     time.sleep(0.05)
 
-#Add a brief time delay to appreciate what has happened    
-time.sleep(4)
+# #Add a brief time delay to appreciate what has happened    
+# time.sleep(4)
 
 #Complete the script by returning all the LED to off
 pixels1.fill((0, 0, 0))
