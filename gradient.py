@@ -48,7 +48,7 @@ time.sleep(1)
 
 while True:
 
-    gradient_cycle(0.001)
+    gradient_cycle(0.01)
 
     # pixels.fill((0, 0, 0))
     # # Uncomment this line if you have RGBW/GRBW NeoPixels
