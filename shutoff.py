@@ -14,3 +14,4 @@ pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.9, auto_write=Fal
 
 
 pixels.fill((0, 0, 0))
+pixels.show()
